@@ -8,7 +8,9 @@ package dario.run;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+import java.awt.Image;
 import java.awt.Rectangle;
+import javax.swing.ImageIcon;
 
 /**
  *
@@ -19,6 +21,12 @@ public class Dario {
     private Rectangle bounds;
     private Color color;
     private final int SPEED = 15;
+    private ImageIcon ii;
+    private Image img;
+    private Image img2;
+    private Image img3;
+    private Image img4;
+    private Image img5;
     
     
     public Dario(int cWidth,int cHeight) {
@@ -33,6 +41,12 @@ public class Dario {
         this.score = 0;
         this.color = Color.GREEN;
         this.bounds = new Rectangle(this.x, this.y, this.width, this.height);
+        this.ii = new ImageIcon(getClass().getResource("Dario-1.png.png"));
+        this.img = ii.getImage();
+        this.ii = new ImageIcon(getClass().getResource("Dario-2.png.png"));
+        this.img2 = ii.getImage();
+        this.ii = new ImageIcon(getClass().getResource("Dario-3.png.png"));
+        this.img3 = ii.getImage();
     }
       public void move(String direction) {        
         if (direction.equals("right"))
