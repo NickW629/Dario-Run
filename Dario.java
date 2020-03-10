@@ -34,12 +34,12 @@ public class Dario {
         this.y = cHeight / 2;
         this.vx = 0;
         this.vy = 0;
-        this.width = 50;
-        this.height = 50;
+        this.width = 200;
+        this.height = 200;
         this.hp = 100;
         this.xp = 0;
         this.score = 0;
-        this.color = Color.GREEN;
+      
         this.bounds = new Rectangle(this.x, this.y, this.width, this.height);
         this.ii = new ImageIcon(getClass().getResource("Dario-1.png.png"));
         this.img = ii.getImage();
@@ -60,9 +60,16 @@ public class Dario {
     }
     
     public void draw(Graphics g) {
-        g.setColor(this.color);
-        Graphics2D g2d = (Graphics2D) g;
-        g2d.fill(bounds);
+        if(vx==SPEED){
+          g.drawImage(img2, x, y, width, height, null);
+        }
+        else if(vx==-SPEED){
+          g.drawImage(img3, x, y, width, height, null);
+        }
+        else {
+          g.drawImage(img, x, y, width, height, null);
+                }
+       
     }
     
     public void attack() {
