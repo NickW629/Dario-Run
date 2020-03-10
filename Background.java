@@ -26,7 +26,7 @@ public class Background {
         this.x = cWidth / 2;
         this.y = cHeight / 2;
          this.bounds = new Rectangle(this.x, this.y, this.width, this.height);
-        this.ii = new ImageIcon(getClass().getResource(""));
+        this.ii = new ImageIcon(getClass().getResource("Background.png"));
         this.img = ii.getImage();
     }
         public void draw(Graphics g) {

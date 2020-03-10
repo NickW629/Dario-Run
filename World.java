@@ -19,9 +19,11 @@ import javax.swing.JPanel;
 public class World extends JPanel {
      private Timer timer;
      private Dario dario;
+     private Background background;
 
     public World() {
         super();
+        background=new Background(0,0);
         dario = new Dario(800,600);
         timer = new Timer();
         timer.scheduleAtFixedRate(new ScheduleTask(), 100, 1000/12);
@@ -31,6 +33,7 @@ public class World extends JPanel {
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
         this.setBackground(Color.BLACK);
+        background.draw(g);
         dario.draw(g);
 
     }
