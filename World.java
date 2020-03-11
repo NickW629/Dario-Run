@@ -20,6 +20,7 @@ public class World extends JPanel {
      private Timer timer;
      private Dario dario;
      private Background background;
+     
 
     public World() {
         super();

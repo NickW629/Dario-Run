@@ -15,7 +15,7 @@ import javax.swing.ImageIcon;
  * @author 629387
  */
 public class Background {
-      private int height, width, x, y ;
+    private int height, width, x, y ;
     private Rectangle bounds;
     private ImageIcon ii;
     private Image img;
