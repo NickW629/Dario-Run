@@ -11,7 +11,7 @@ import java.awt.Color;
  *
  * @author 629387
  */
-public class Dirb extends Sprite{
+public abstract class Dirb extends Sprite{
     
     public Dirb(int speed, int x, int y, int width, int height, Color color) {
         super(speed, x, y, width, height, color);

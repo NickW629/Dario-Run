@@ -11,7 +11,7 @@ import java.awt.Color;
  *
  * @author 629387
  */
-public class Dollars extends Sprite{
+public abstract class Dollars extends Sprite{
     
     public Dollars(int speed, int x, int y, int width, int height, Color color) {
         super(speed, x, y, width, height, color);

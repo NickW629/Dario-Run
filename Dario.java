@@ -25,8 +25,7 @@ public class Dario {
     private Image img;
     private Image img2;
     private Image img3;
-    private Image img4;
-    private Image img5;
+   
     
     
     public Dario(int cWidth,int cHeight) {
@@ -90,6 +89,58 @@ public class Dario {
         this.vx = 0;
         this.vy = 0;
     }
+
+    public int getHeight() {
+        return height;
+    }
+
+    public void setHeight(int height) {
+        this.height = height;
+    }
+
+    public int getWidth() {
+        return width;
+    }
+
+    public void setWidth(int width) {
+        this.width = width;
+    }
+
+    public int getX() {
+        return x;
+    }
+
+    public void setX(int x) {
+        this.x = x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
+    public void setY(int y) {
+        this.y = y;
+    }
+
+    public int getVx() {
+        return vx;
+    }
+
+    public void setVx(int vx) {
+        this.vx = vx;
+    }
+     public Rectangle getBounds() {
+        return bounds;
+    }
+
+    public int getVy() {
+        return vy;
+    }
+
+    public void setVy(int vy) {
+        this.vy = vy;
+    }
+    
 }
     
 
